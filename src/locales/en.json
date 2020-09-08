@@ -1,0 +1,26 @@
+{
+	"messages": {
+		"header": "Header English",
+		"agency": "Find an agency",
+		"footer": {
+			"termsofuse": "Terms of use",
+			"privacy": "Privacy Statement",
+			"allstate": "All State US",
+			"copyright": "©2020 Copyright Allstate Insurance Company. All Rights Reserved."
+		},
+		"haveOilTank": "Do you have oil tank?",
+		"haveBurningStove": "Does your home have a wood burning stove",
+		"mortgagesCount": "How many mortgages do you have?",
+		"closetFireHydrant": "Distance to Closet Fire Hydrant",
+		"closetFireState": "Distance to Closet Fire State",
+		"describeYourHome": "Describe Your Home",
+		"dwelling": "Age of Dwelling (0-99)",
+		"dateMovedInto": "Date Moved into Home",
+		"ageOfRoof": "Age of Home's Roof",
+		"totalSquareFoot": "Total Square Footage of Home, Excluding Basement (800 MIN)",
+		"percentBasement": "Percentage of Basement is Finished (Approximate)",
+		"language": {
+			"switch": "Switch Language"
+		}
+	}
+}

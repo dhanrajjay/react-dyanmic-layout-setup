@@ -1,0 +1,13 @@
+.header {
+	background: #0062cc;
+	color: white;
+}
+
+.header .logo {
+	display: inline-block;
+}
+
+.header .logo img {
+	width: 200px;
+	height: 100px;
+}

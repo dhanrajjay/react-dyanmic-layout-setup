@@ -1,0 +1,12 @@
+# compiled output
+/dist
+
+# dependencies
+/node_modules
+/node
+
+# System Files
+.DS_Store
+
+# idea
+.idea

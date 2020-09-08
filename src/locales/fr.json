@@ -1,0 +1,26 @@
+{
+	"messages": {
+		"header": "Header Freanch",
+		"agency": "Find an agency French",
+		"footer": {
+			"termsofuse": "Terms of use French",
+			"privacy": "Privacy Statement French",
+			"allstate": "All State US French",
+			"copyright": "©2020 Copyright Allstate Insurance Company. All Rights Reserved French."
+		},
+		"haveOilTank": "Do you have oil tank? French",
+		"haveBurningStove": "Does your home have a wood burning stove, French",
+		"mortgagesCount": "How many mortgages do you have? French",
+		"closetFireHydrant": "Distance to Closet Fire Hydrant, French",
+		"closetFireState": "Distance to Closet Fire State, French",
+		"describeYourHome": "Describe Your Home, French",
+		"dwelling": "Age of Dwelling (0-99), French",
+		"dateMovedInto": "Date Moved into Home, French",
+		"ageOfRoof": "Age of Home's Roof, French",
+		"totalSquareFoot": "Total Square Footage of Home, Excluding Basement (800 MIN), French",
+		"percentBasement": "Percentage of Basement is Finished (Approximate), French",
+		"language": {
+			"switch": "Switch Language French"
+		}
+	}
+}

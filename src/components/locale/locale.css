@@ -1,0 +1,12 @@
+.locale-container {
+    margin: 0 0 1rem 2rem;
+}
+
+.language {
+    color: #555555;
+    cursor: pointer;
+}
+
+.language:hover {
+    color: #848282;
+}

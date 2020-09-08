@@ -1,0 +1,22 @@
+.footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer li {
+    list-style: none;
+}
+
+.footer li a {
+    color: #555555;
+    text-decoration: none;
+}
+
+.footer li a:hover {
+    color: #848282;
+}
+
+.copyright {
+    color: #555555;
+}
