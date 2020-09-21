@@ -67,7 +67,10 @@ module.exports = (env, args) => {
 			}),
 			new MiniCssExtractPlugin("style.css"),
 			new MinifyPlugin()
-		]
+		],
+		devServer: {
+            port: 9000
+        }
 	}
 
 	return config;

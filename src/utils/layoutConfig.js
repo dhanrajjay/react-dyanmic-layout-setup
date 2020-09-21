@@ -1,3 +1,5 @@
+import {Validator} from 'rv-react-test/Utils/Validator';
+
 export const LayoutConfig = {
   children: [
     {
@@ -11,7 +13,7 @@ export const LayoutConfig = {
                 label: "Describe Your Home",
                 name: "describeYourHome",
                 localeKey: "describeYourHome",
-                list: ["Bi-Level Town House End Unit/Semi-detached", "Bi-Bi-Level Town House End Unit/Semi-detached"]
+                list: []
               },
               {
                 input: "select",
@@ -48,7 +50,11 @@ export const LayoutConfig = {
                  label: "Percentage of Basement is Finished (Approximate)",
                  name: "percentBasement",
                  localeKey: "percentBasement",
-                 placeholder: "Enter the Basement Finished Percentage"
+                 placeholder: "Enter the Basement Finished Percentage",
+                 validators: [{
+                    check: Validator.required,
+                    message: 'This field is required'
+                  }]
               }
             ]
         },
