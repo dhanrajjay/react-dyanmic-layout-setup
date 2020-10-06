@@ -34,7 +34,7 @@ console.log('Column Layout Container');
 
 const renderLayout = (onChange, layoutConfig, payloadMap) => {
 
-    return layoutConfig ?
+    return layoutConfig && layoutConfig.length ?
         <>
         <Translation>
           {
@@ -44,8 +44,8 @@ const renderLayout = (onChange, layoutConfig, payloadMap) => {
                   const {layoutType, input, label, name, list, placeholder, localeKey, validators} = config
                   let key;
 
-                  const handleChange = (event, isInnerHTMLElem) => {
-                      onChange(event, isInnerHTMLElem);
+                  const handleChange = (event, isInnerHTMLElem, isError) => {
+                      onChange(event, isInnerHTMLElem, isError);
                   }
 
                   if (newConfig.length) {
@@ -100,7 +100,7 @@ const renderLayout = (onChange, layoutConfig, payloadMap) => {
              }
           </Translation>
         </>
-    : null
+    : <div> Empty config has been passed.</div>
 }
 
 class LayoutWrapper extends Component {
@@ -109,8 +109,8 @@ class LayoutWrapper extends Component {
         this.handleChange = this.handleChange.bind(this);
     }
 
-    handleChange(event, isInnerHTMLElem) {
-        this.props.handleChange(event, isInnerHTMLElem);
+    handleChange(event, isInnerHTMLElem, isError) {
+        this.props.handleChange(event, isInnerHTMLElem, isError);
     }
 
 	render() {

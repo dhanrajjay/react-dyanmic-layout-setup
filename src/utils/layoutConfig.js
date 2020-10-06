@@ -43,7 +43,14 @@ export const LayoutConfig = {
                  label: "Total Square Footage of Home, Excluding Basement (800 MIN)",
                  name: "totalSqrFoot",
                  localeKey: "totalSquareFoot",
-                 placeholder: "Enter the Total Square Foot"
+                 placeholder: "Enter the Total Square Foot",
+                 validators: [{
+                     check: Validator.required,
+                     message: 'This field is required'
+                 }, {
+                    check: Validator.isMinimum,
+                    message: 'This field must be longer than two characters'
+                 }]
               },
               {
                  input: "text",
@@ -54,7 +61,7 @@ export const LayoutConfig = {
                  validators: [{
                     check: Validator.required,
                     message: 'This field is required'
-                  }]
+                 }]
               }
             ]
         },
