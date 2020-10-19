@@ -22,7 +22,9 @@ export const LayoutConfig = {
                 label: "Age of Dwelling (0-99)",
                 name: "ageOfDwelling",
                 localeKey: "dwelling",
-                list: [30, 40, 50]
+                list: [{value: 30, label: 'general.thirty'},
+                       {value: 40, label: 'general.forty'},
+                       {value: 50, label: 'general.fifty' }]
               },
               {
                 input: "date-selection",
@@ -38,7 +40,10 @@ export const LayoutConfig = {
                 label: "Age of Home's Roof",
                 name: "ageOfRoof",
                 localeKey: "ageOfRoof",
-                list: [20, 25, 26, 29]
+                list: [{value: 20, label: '20'},
+                       {value: 25, label: '25'},
+                       {value: 26, label: '26' },
+                       {value: 29, label: '29' }]
               },
               {
                  input: "text",
@@ -94,14 +99,16 @@ export const LayoutConfig = {
              {
                input: "select",
                label: "Distance to Closet Fire Hydrant",
-               list: ["301 metres (987 feet) or more", "1301 metres (987 feet) or more"],
+               list: [{value: "301 metres (987 feet) or more", label: "301 metres (987 feet) or more"},
+                      {value: "1301 metres (987 feet) or more", label: "1301 metres (987 feet) or more"}],
                name: "closetFireHydrant",
                localeKey: "closetFireHydrant"
              },
              {
                input: "select",
                label: "Distance to Closet Fire State",
-               list: ["More than 22 km (13 miles)", "1. More than 22 km (13 miles)"],
+               list: [{value: "More than 22 km (13 miles)", label: "More than 22 km (13 miles)"},
+                      {value: "1. More than 22 km (13 miles)", label: "1. More than 22 km (13 miles)"}],
                name: "closetFireState",
                localeKey: "closetFireState"
              },

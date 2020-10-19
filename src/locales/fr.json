@@ -24,7 +24,10 @@
 		},
 		"general": {
 			"yes": "Yes French",
-			"no": "No French"
+			"no": "No French",
+			"thirty": "30 French",
+			"forty": "40 French",
+			"fifty": "50 French"
 		}
 	}
 }

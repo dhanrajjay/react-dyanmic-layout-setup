@@ -78,8 +78,15 @@ const renderLayout = (onChange, layoutConfig, payloadMap) => {
                     key=`${input}-${ind}`
                     switch (input) {
                       case "select":
+                        let selectTranslatedList = [];
+                        if (list && list.length) {
+                            selectTranslatedList = list.map((val) =>  {
+                              return { value : val.value,
+                              label : t(val.label) }
+                            });
+                        }
                         return <Select key={key} label={t(localeKey)} name={name} value={payloadMap[name]}
-                                       list={list} value={payloadMap[name]}
+                                       list={selectTranslatedList} value={payloadMap[name]}
                                        onChange={handleChange} errorCB={selectErrorCB}/>
                       case "date-selection":
                         return <DateSelection key={key} label={t(localeKey)}

@@ -24,7 +24,10 @@
 		},
 		"general": {
 			"yes": "Yes",
-			"no": "No"
+			"no": "No",
+			"thirty": "30",
+			"forty": "40",
+			"fifty": "50"
 		}
 	}
 }
