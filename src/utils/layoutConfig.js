@@ -1,4 +1,5 @@
 import {Validator} from 'rv-react-test/Utils/Validator';
+import i18n from "../i18n";
 
 export const LayoutConfig = {
   children: [
@@ -13,7 +14,8 @@ export const LayoutConfig = {
                 label: "Describe Your Home",
                 name: "describeYourHome",
                 localeKey: "describeYourHome",
-                list: []
+                list: [],
+                url: ''
               },
               {
                 input: "select",
@@ -72,7 +74,7 @@ export const LayoutConfig = {
                input: "btn-group",
                label: "Do you have oil tank?",
                name: "haveOilTank",
-               list: ['Yes', 'No'],
+               list: [{label: 'general.yes', value: 'Yes'}, {label: 'general.no', value: 'No'}],
                localeKey: "haveOilTank"
              },
              {
@@ -80,14 +82,14 @@ export const LayoutConfig = {
                label: "Does your home have a wood burning stove",
                name: "haveBurningStove",
                localeKey: "haveBurningStove",
-               list: ['Yes', 'No']
+               list: [{label:'Yes', value: 'Yes'}, {label: 'No', value: 'No'}]
              },
              {
                input: "btn-group",
                label: "How many mortgages do you have?",
                name: "mortgagesCount",
                localeKey: "mortgagesCount",
-               list: ['0', '1', '2', '3+']
+               list: [{label: '0', value: '0'}, {label: '1', value: '1'}, {label: '2', value: '2'}, {label: '3+', value: '3+'}]
              },
              {
                input: "select",
@@ -102,6 +104,20 @@ export const LayoutConfig = {
                list: ["More than 22 km (13 miles)", "1. More than 22 km (13 miles)"],
                name: "closetFireState",
                localeKey: "closetFireState"
+             },
+             {
+               input: "select",
+               label: "Google.com",
+               name: "google",
+               localeKey: "closetFireState",
+               url: 'https://www.google.com'
+             },
+             {
+               input: "select",
+               label: "Another Dropdown",
+               name: "anotherDropdown",
+               localeKey: "closetFireState",
+               url: 'https://cors-anywhere.herokuapp.com/https://swapi.dev/api/people'
              }
            ]
          }

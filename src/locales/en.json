@@ -21,6 +21,10 @@
 		"percentBasement": "Percentage of Basement is Finished (Approximate)",
 		"language": {
 			"switch": "Switch Language"
+		},
+		"general": {
+			"yes": "Yes",
+			"no": "No"
 		}
 	}
 }

@@ -6,7 +6,6 @@ import PropTypes from 'prop-types';
 import './layoutWrapper.css';
 
 const ContainerLayout = props => {
-    console.log('Container');
   return (
     <Container>
       {renderLayout(props.onChange, props.config, props.payloadMap)}
@@ -15,7 +14,6 @@ const ContainerLayout = props => {
 }
 
 const RowLayout = props => {
-console.log('Row Layout Container');
   return (
     <Row className="justify-content-md-center">
       {renderLayout(props.onChange, props.config, props.payloadMap)}
@@ -24,7 +22,6 @@ console.log('Row Layout Container');
 }
 
 const ColumnLayout = props => {
-console.log('Column Layout Container');
   return (
     <Col xs="auto" md={6}>
       {renderLayout(props.onChange, props.config, props.payloadMap)}
@@ -46,6 +43,10 @@ const renderLayout = (onChange, layoutConfig, payloadMap) => {
 
                   const handleChange = (event, isInnerHTMLElem, isError) => {
                       onChange(event, isInnerHTMLElem, isError);
+                  }
+
+                  const selectErrorCB = (error) => {
+
                   }
 
                   if (newConfig.length) {
@@ -79,14 +80,18 @@ const renderLayout = (onChange, layoutConfig, payloadMap) => {
                       case "select":
                         return <Select key={key} label={t(localeKey)} name={name} value={payloadMap[name]}
                                        list={list} value={payloadMap[name]}
-                                       onChange={handleChange}/>
+                                       onChange={handleChange} errorCB={selectErrorCB}/>
                       case "date-selection":
                         return <DateSelection key={key} label={t(localeKey)}
                                        year={payloadMap['year']} month={payloadMap['month']} day={payloadMap['day']}
                                        onChange={handleChange} />
                       case "btn-group":
+                         const translatedList = list.map((val) =>  {
+                            return { value : val.value,
+                            label : t(val.label) }
+                         });
                          return <ButtonGroupList key={key} label={t(localeKey)} name={name}
-                                       list={list} value={payloadMap[name]}
+                                       list={translatedList} value={payloadMap[name]}
                                        onChange={handleChange} />
                       case "text":
                       case "number":

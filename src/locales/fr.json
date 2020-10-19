@@ -21,6 +21,10 @@
 		"percentBasement": "Percentage of Basement is Finished (Approximate), French",
 		"language": {
 			"switch": "Switch Language French"
+		},
+		"general": {
+			"yes": "Yes French",
+			"no": "No French"
 		}
 	}
 }
